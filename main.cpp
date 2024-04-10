@@ -1,6 +1,12 @@
 #include <iostream>
+#include <string>
+
+struct Book {
+    std::string title;
+    std::string author;
+    int year;
+};
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
