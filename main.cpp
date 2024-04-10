@@ -37,6 +37,15 @@ void sortByAuthor(Book* books[], int size) {
     }
 }
 
+void (*selectSortingFunction(int choice))(Book**, int) {
+    if (choice == 1)
+        return sortByYear;
+    else if (choice == 2)
+        return sortByAuthor;
+    else
+        return nullptr;
+}
+
 int main() {
     return 0;
 }
